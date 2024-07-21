@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient History and Demographics</title>
-  <link rel="stylesheet" href="CSS/history_demographics.css">
+  <title>Patient Registration</title>
+  <link rel="stylesheet" href="CSS/registration_page.css">
 </head>
 <body>
   <div class="container">
-    <h1>Patient History and Demographics</h1>
-    <form id="patientHistoryForm">
-      <!-- Demographic Information -->
+    <h1>Patient Registration</h1>
+    <form id="registrationForm">
+      <!-- Personal Information -->
       <fieldset>
-        <legend>Demographic Information</legend>
+        <legend>Personal Information</legend>
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
 
@@ -31,7 +31,11 @@
 
         <label for="contactNumber">Contact Number:</label>
         <input type="tel" id="contactNumber" name="contactNumber" required>
+      </fieldset>
 
+      <!-- Address -->
+      <fieldset>
+        <legend>Address</legend>
         <label for="address">Address:</label>
         <input type="text" id="address" name="address" required>
 
@@ -45,14 +49,24 @@
         <input type="text" id="zipCode" name="zipCode" required>
       </fieldset>
 
-      <!-- Medical History -->
+      <!-- Medical Information -->
       <fieldset>
-        <legend>Medical History</legend>
+        <legend>Medical Information</legend>
         <label for="allergies">Allergies:</label>
         <textarea id="allergies" name="allergies"></textarea>
 
         <label for="medicalHistory">Medical History:</label>
         <textarea id="medicalHistory" name="medicalHistory"></textarea>
+      </fieldset>
+
+      <!-- Insurance Information -->
+      <fieldset>
+        <legend>Insurance Information</legend>
+        <label for="insuranceProvider">Insurance Provider:</label>
+        <input type="text" id="insuranceProvider" name="insuranceProvider" required>
+
+        <label for="policyNumber">Policy Number:</label>
+        <input type="text" id="policyNumber" name="policyNumber" required>
       </fieldset>
 
       <!-- Form Buttons -->
